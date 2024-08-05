@@ -4,9 +4,118 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Irina Pristrom</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    h2 {margin: 7px 0 4px;
+    }
+    footer {
+      background-color: rgb(240, 245, 250);
+    }
+    footer p {
+      margin-bottom: 0;
+    }
+    footer a {
+      margin-right: 25px; margin-left: 25px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 0px;
+    }
+    .menu {
+      background-color: rgb(240, 245, 250);
+      height: 50px;
+      padding-top: 25px;
+    }
+    .menu li {
+      font-size: 20px;
+      display: inline;
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+    li {
+      list-style-type: none;
+      padding-top: 0px;
+      margin-bottom: 0px;
+    }
+    pre {
+      border: 1px solid black;
+      text-align: left;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-  
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/122208823?v=4" width="225" height="225" alt="Irina Pristrom">
+    <h1>
+      Irina Pristrom
+    </h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="#contacts">РЎontacts</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#languages">Languages</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="contacts">
+      <h2>Contacts</h2>
+      <ul>
+        <li>E-mail: <i>pri_ra@mail.ru</i></li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>SQL</li>
+        <li>FoxPro</li>
+      </ul>
+    </section>
+    <section id="code">
+      <h2>Code</h2>
+      <pre>
+        <code>
+          import requests
+          website = "https://jsonplaceholder.typicode.com/posts/1"
+          print(requests.get(website).json())
+
+          response = requests.put(website, data={
+              "id": 1,
+              "userId": 12,
+              "title": "my new post",
+              "body": "body for my post"
+          })
+          print(response.json())
+        </code>
+      </pre>
+    </section>  
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>BNTU</li>
+        <li>IT OVERONE</li>
+        <li>1C</li>
+      </ul>
+    </section>
+    <section id="languages">
+      <h2>Languages</h2>
+      <ul>
+        <li>English: <i>A2</i></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p><img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/4f7610d1374b6874ad6687c139ae42204362d8ad/tasks/cv/rs-school-logo.svg" width="200" height="100" alt="RS School"></p>
+    <a href="https://github.com/prira111">GitHub Irina Pristrom</a>
+    <a href="https://rs.school/courses/javascript-ru">JavaScript/Front-end Course</a>
+  </footer>
 </body>
 </html>
